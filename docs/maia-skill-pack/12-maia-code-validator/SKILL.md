@@ -39,6 +39,22 @@ Validar:
 
 ---
 
+## Validação de TDD
+
+Quando a tarefa for código crítico (Core, regra de negócio, API, parser, validação, cálculo, integração, autenticação, permissão, automação reutilizável ou bugfix), verificar:
+
+- o teste foi criado antes ou junto da implementação?
+- existe evidência da falha inicial (motivo esperado)?
+- o teste cobre o comportamento esperado?
+- o código implementado é o mínimo necessário?
+- houve refatoração segura, sem mudar comportamento?
+- os testes foram executados após a refatoração, com saída real?
+- se TDD não foi usado, existe justificativa válida no resumo de implementação?
+
+Ausência de TDD em código crítico **sem justificativa** é achado de bloqueio ou ressalva, conforme severidade.
+
+---
+
 ## Saídas obrigatórias
 
 1. Resumo executivo.
@@ -83,6 +99,7 @@ Valide:
 - comandos reais executados;
 - documentação versus implementação;
 - alucinações da IA;
+- aderência ao TDD em código crítico (teste antes, falha inicial, código mínimo, refatoração segura, testes após refatoração) ou justificativa válida quando não aplicável;
 - HANDOFF.md.
 
 Não aceite declarações sem evidência. Verifique arquivos, comandos e saídas reais.
