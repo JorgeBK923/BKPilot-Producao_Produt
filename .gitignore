@@ -1,0 +1,44 @@
+# Credenciais — NUNCA commitar
+.env
+clients/*/.env
+
+# Dados de clientes específicos (não comitar no repo)
+clients/gni/
+
+# Fixtures e dados sensíveis por cliente
+clients/*/fixtures/
+clients/*/bugs/
+
+# Pacotes de automação gerados para o cliente (entregáveis por stack)
+clients/*/entregaveis/
+clients/*/resultado/
+
+# Artefatos gerados (grandes demais para o repositório)
+estado/screenshots/
+resultado/
+
+# Planilhas com resultados de execução
+cenarios/cenarios_resultado_*.xlsx
+cenarios/cenarios_regressao_*.xlsx
+
+# Node
+node_modules/
+
+# Docs legados e specs arquivadas (não-código)
+arquivo/
+
+# Estado de exploração (artefatos gerados por /explorar)
+estado/*.md
+estado/*.json
+
+# Temporários e builds locais
+_*.js
+_*.txt
+.build_manifest.json
+*.log
+
+# IDE
+.vscode/
+.idea/
+BKPilot-Core/
+graphify-out/

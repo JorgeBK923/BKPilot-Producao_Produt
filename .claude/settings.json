@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx.cmd",
+      "args": ["@playwright/mcp@latest", "--headless"]
+    },
+    "mobile": {
+      "command": "node",
+      "args": ["scripts/mobile-mcp-server.js"]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "bugkillers-qa-agent",
+  "version": "1.0.0",
+  "description": "Sistema de automaÃ§Ã£o de QA baseado em Claude Code + Playwright MCP, com skills mobile planejadas para Appium/MCP. 27 comandos slash cobrem o pipeline completo web e mobile.",
+  "main": "index.js",
+  "scripts": {
+    "mobile:mcp": "node scripts/mobile-mcp-server.js",
+    "mobile:smoke": "node scripts/mobile-smoke.js",
+    "mobile:doctor": "node scripts/mobile-doctor.js",
+    "tv:doctor": "node scripts/tv-doctor.js",
+    "mobile:qr": "node scripts/mobile-qr-decode.js",
+    "vevatv:pair": "node scripts/vevatv-pair-device.js --cliente vevatv",
+    "mobile:purge": "node scripts/mobile-purge.js",
+    "mobile:report": "node scripts/gerar-relatorio-final-mobile.js",
+    "skills:sync:mobile": "node scripts/sync-shared-skills.js mobile",
+    "skills:build": "node converter/render.js --build-all",
+    "skills:lint": "node converter/render.js --lint",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preflight:vpn": "node scripts/vpn-preflight.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@bugkillers/bkpilot-core": "github:JorgeBK923/BKPilot-Core#v0.2.8",
+    "canvas": "^3.2.3",
+    "chokidar": "^3.6.0",
+    "docx": "^9.6.1",
+    "dotenv": "^16.6.1",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.1",
+    "jsqr": "^1.4.0",
+    "mammoth": "^1.12.0",
+    "markdown-to-docx": "^1.2.0",
+    "nunjucks": "^3.2.4",
+    "pdfkit": "^0.18.0",
+    "playwright": "^1.59.1",
+    "pngjs": "^7.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "html-to-docx": "^1.8.0",
+    "marked": "^18.0.2"
+  }
+}
