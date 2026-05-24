@@ -46,10 +46,25 @@ Se faltar contexto, registre como dúvida. Não invente.
 1. Resumo executivo.
 2. Achados principais.
 3. Riscos.
-4. Checklist de conclusão.
-5. Decisão final.
-6. Próxima skill recomendada.
-7. Atualização recomendada para o `HANDOFF.md`.
+4. Estratégia de teste (ver abaixo).
+5. Checklist de conclusão.
+6. Decisão final.
+7. Próxima skill recomendada.
+8. Atualização recomendada para o `HANDOFF.md`.
+
+---
+
+## Estratégia de teste
+
+O plano deve definir, antes da implementação:
+
+- se a tarefa exige TDD (obrigatório para Core, biblioteca compartilhada, API, parser, regra de negócio, validação, cálculo, integração, autenticação, permissão, fluxo crítico, automação reutilizável e bugfix);
+- quais comportamentos serão cobertos por teste;
+- quais testes serão criados ou atualizados antes do código;
+- como confirmar a falha inicial esperada;
+- comando(s) para executar os testes.
+
+Se TDD não for aplicável (documentação, protótipo, spike, ajuste visual pequeno, script descartável, prova de conceito sem contrato), registrar a justificativa no plano. A `06-maia-implementacao` executa o ciclo TDD; a `12-maia-code-validator` valida se foi seguido.
 
 ---
 
@@ -82,7 +97,7 @@ BLOQUEADO
 Use a skill 03-maia-planejamento.
 
 Leia o HANDOFF.md, entenda o escopo e execute esta etapa do MAIA.
-Gere resumo executivo, achados, riscos, checklist, decisão final, próximos passos e atualização recomendada do HANDOFF.md.
+Gere resumo executivo, achados, riscos, estratégia de teste (incluindo se a tarefa exige TDD e quais testes virão antes do código), checklist, decisão final, próximos passos e atualização recomendada do HANDOFF.md.
 
 Não invente evidências. Se faltar contexto, registre como dúvida.
 ```

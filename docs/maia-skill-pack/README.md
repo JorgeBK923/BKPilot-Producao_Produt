@@ -36,13 +36,19 @@ HANDOFF.md = passagem de bastão entre IAs
         ↓
 03-maia-planejamento
         ↓
+   (definir estratégia de teste / TDD)
+        ↓
 04-maia-arquitetura
         ↓
 05-maia-harness
         ↓
 06-maia-implementacao
         ↓
+   TDD: teste falhando → código mínimo → teste passando → refatoração
+        ↓
 12-maia-code-validator
+        ↓
+   (validar se o TDD foi seguido)
         ↓
 07-maia-qa-validacao
         ↓
@@ -97,6 +103,7 @@ Uma tarefa só pode ser considerada concluída quando:
 - [ ] plano executável;
 - [ ] arquitetura respeitada;
 - [ ] implementação concluída;
+- [ ] TDD aplicado em código crítico (ou justificativa registrada);
 - [ ] código validado tecnicamente;
 - [ ] QA funcional executado;
 - [ ] segurança avaliada quando aplicável;
