@@ -1,15 +1,17 @@
 # HANDOFF — BKPilot — Ciclo Skill Runner Primeiro (Pré-Sprint Técnica)
 
-**Data:** 2026-05-23
+> **PRE-SPRINT TECNICA ENCERRADA em 2026-05-25.** Gate 0 do BKPilot-SkillRunner APROVADO COM RESSALVAS (T01-T24, 24/24 tarefas). Detalhe operacional e backlog da Sprint 1 vivem no repo `BKPilot-SkillRunner` (`HANDOFF.md` + `docs/maia/10-memoria/memoria-gate0-2026-05-25.md`, espelhada em `docs/maia/10-memoria/` deste hub). Proxima etapa = Sprint 1 (Engine real reutilizavel).
+
+**Data:** 2026-05-23 (criado) · **Atualizado:** 2026-05-25 (encerramento Gate 0 / T24)
 **Origem:** Guardiao MAIA (skill `03-maia-planejamento`)
-**Destino:** Proxima skill MAIA = `12-maia-code-validator` (Antigravity + Gemini 3.1 Pro)
-**Fluxo MAIA:** ciclo em andamento — Pré-Sprint Técnica do BKPilot-SkillRunner
-**Escopo:** Pré-Sprint Técnica — provar Skill Runner Engine isolado executando a skill **Usabilidade** end-to-end, em repo novo `BKPilot-SkillRunner`, em TypeScript.
-**Status:** T01 IMPLEMENTADO e smoke-validado (typecheck/lint/build exit 0 pelo Guardiao). Aguardando commit + validacao formal T02.
-**Ultima skill executada:** `06-maia-implementacao` - T01 (Codex CLI + GPT-5.3 Codex), smoke pelo Guardiao
-**Proxima skill recomendada:** `12-maia-code-validator` - T02, com **Antigravity + Gemini 3.1 Pro** (emenda ADR-004, 2026-05-23)
-**Repo SkillRunner:** materializado em `C:\Users\Jorge Alves\IA\Produto\BKPilot-SkillRunner\` (bootstrap `a9d0d5b`, HEAD `4837761`, local only, sem remote)
-**Bloqueadores atuais:** Nenhum. Pendência humana #2 **RESOLVIDA em 2026-05-23**: criar repo **local primeiro**, push para GitHub depois (decisão do owner).
+**Destino:** Proxima skill MAIA = `06-maia-implementacao` (Sprint 1, T01 = criar `scripts/convert-skill.ts`), Codex / GPT-5.3
+**Fluxo MAIA:** Pré-Sprint Técnica do BKPilot-SkillRunner **CONCLUIDA**; abrindo Sprint 1
+**Escopo:** Pré-Sprint Técnica — provar Skill Runner Engine isolado executando a skill **Usabilidade** end-to-end, em repo novo `BKPilot-SkillRunner`, em TypeScript. **PROVADO (Gate 0).**
+**Status:** **T01-T24 CONCLUIDOS.** Gate 0 APROVADO COM RESSALVAS: Mock 10/10 + real Groq completed; QA final 10/10 (deepseek + cobertura Gemini CONCORDA); review final Opus APROVA COM RESSALVAS; 50 testes verdes; typecheck/lint exit 0. Branch `main` no repo SkillRunner, NAO pushado. Gate 0 encerrado SEM pendencia sem dono — debitos D1-D10 transferidos p/ Sprint 1 com dono.
+**Ultima skill executada:** `10-maia-memoria` - T24 (Cursor + Opus 4.7): memoria de encerramento (`docs/maia/10-memoria/memoria-gate0-2026-05-25.md`, espelhada neste hub) + abertura Sprint 1; HANDOFFs dos dois repos atualizados.
+**Proxima skill recomendada:** `06-maia-implementacao` - Sprint 1 T01 (criar `scripts/convert-skill.ts`: converter as 12 skills web restantes; depois CursorLLM real + meta paridade >= 95% + saldar D1-D8). Codex / GPT-5.3; validacao = Gemini 3.1 Pro.
+**Repo SkillRunner:** `C:\Users\Jorge\IA\Produto\BKPilot-SkillRunner\` (branch `main`, NAO pushado; nao fixar SHA como verdade durável — ver D10 na memoria) + remote `https://github.com/JorgeBK923/BKPilot-SkillRunner.git` (sem push da Pre-Sprint ate decisao do owner).
+**Bloqueadores atuais:** Nenhum. Pendencias humanas p/ iniciar a Sprint 1: definir duracao da sprint; i18n no Engine (Sprint 1 ou 3); baseline Claude p/ medir paridade (D9); decisao de push remoto.
 **Nivel de risco:** Medio (R1, R5 e P1 ALTA mitigaveis; demais MEDIA/BAIXA, incluindo E1-E5, A1-A5, H1-H2, P2-P5)
 
 ---
