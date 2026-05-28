@@ -1,15 +1,15 @@
 # HANDOFF — BKPilot — Ciclo Skill Runner Primeiro (Pré-Sprint Técnica)
 
-> **PRE-SPRINT TECNICA ENCERRADA em 2026-05-25.** Gate 0 do BKPilot-SkillRunner APROVADO COM RESSALVAS (T01-T24, 24/24 tarefas). Detalhe operacional e backlog da Sprint 1 vivem no repo `BKPilot-SkillRunner` (`HANDOFF.md` + `docs/maia/10-memoria/memoria-gate0-2026-05-25.md`, espelhada em `docs/maia/10-memoria/` deste hub). Spec Sprint 1 CONCLUIDA (2026-05-26): Gate 1 formalizado em G1-1..G1-15 (`docs/maia/02-especificacao/especificacao-sprint1-2026-05-25.md`, espelhada no SkillRunner). Proxima etapa = `03-maia-planejamento` (quebrar G1-1..G1-15 em tarefas Sprint 1).
+> **PRE-SPRINT TECNICA ENCERRADA em 2026-05-25.** Gate 0 do BKPilot-SkillRunner APROVADO COM RESSALVAS (T01-T24, 24/24 tarefas). Detalhe operacional e backlog da Sprint 1 vivem no repo `BKPilot-SkillRunner` (`HANDOFF.md` + `docs/maia/10-memoria/memoria-gate0-2026-05-25.md`, espelhada em `docs/maia/10-memoria/` deste hub). Spec + Planejamento Sprint 1 CONCLUIDOS. Backlog T01-T29 (29 tarefas, caminho critico 7-8d). Proxima etapa = `06-maia-implementacao` Sprint 1 T01 (D6 metrics required; Codex/GPT-5.3). Docs: `docs/maia/02-especificacao/especificacao-sprint1-2026-05-25.md` + `docs/maia/03-planejamento/planejamento-sprint1-2026-05-27.md` (espelhadas no SkillRunner).
 
 **Data:** 2026-05-23 (criado) · **Atualizado:** 2026-05-25 (encerramento Gate 0 / T24)
 **Origem:** Guardiao MAIA (skill `03-maia-planejamento`)
-**Destino:** Proxima skill MAIA = `03-maia-planejamento` (Sprint 1 - quebrar G1-1..G1-15 em tarefas T01..T0N). Depois 06-implementacao T01.
+**Destino:** Proxima skill MAIA = `06-maia-implementacao` Sprint 1 T01 (D6 metrics required; G1-10), Codex / GPT-5.3. T02 (validacao) = Gemini 3.1 Pro.
 **Fluxo MAIA:** Pré-Sprint Técnica do BKPilot-SkillRunner **CONCLUIDA**; abrindo Sprint 1
 **Escopo:** Pré-Sprint Técnica — provar Skill Runner Engine isolado executando a skill **Usabilidade** end-to-end, em repo novo `BKPilot-SkillRunner`, em TypeScript. **PROVADO (Gate 0).**
 **Status:** **T01-T24 CONCLUIDOS.** Gate 0 APROVADO COM RESSALVAS: Mock 10/10 + real Groq completed; QA final 10/10 (deepseek + cobertura Gemini CONCORDA); review final Opus APROVA COM RESSALVAS; 50 testes verdes; typecheck/lint exit 0. Branch `main` no repo SkillRunner, NAO pushado. Gate 0 encerrado SEM pendencia sem dono — debitos D1-D10 transferidos p/ Sprint 1 com dono.
 **Ultima skill executada:** `10-maia-memoria` - T24 (Cursor + Opus 4.7): memoria de encerramento (`docs/maia/10-memoria/memoria-gate0-2026-05-25.md`, espelhada neste hub) + abertura Sprint 1; HANDOFFs dos dois repos atualizados.
-**Proxima skill recomendada:** `03-maia-planejamento` - Sprint 1 (quebrar G1-1..G1-15 em tarefas T01..T0N, <=1 dia cada, com dono por ADR-004; mapear dependencias; respeitar teto 7-10 dias uteis). Apos planejamento aprovado -> `06-maia-implementacao` T01.
+**Proxima skill recomendada:** `06-maia-implementacao` Sprint 1 **T01** (D6 - tornar `result.metrics` obrigatorio no `resultSchema`; G1-10). 0.5 dia. Codex/GPT-5.3 implementa; T02 (Gemini) valida.
 **Repo SkillRunner:** `C:\Users\Jorge\IA\Produto\BKPilot-SkillRunner\` (branch `main`, NAO pushado; nao fixar SHA como verdade durável — ver D10 na memoria) + remote `https://github.com/JorgeBK923/BKPilot-SkillRunner.git` (sem push da Pre-Sprint ate decisao do owner).
 **Bloqueadores atuais:** Nenhum. Pendencias humanas p/ iniciar a Sprint 1: definir duracao da sprint; i18n no Engine (Sprint 1 ou 3); baseline Claude p/ medir paridade (D9); decisao de push remoto.
 **Nivel de risco:** Medio (R1, R5 e P1 ALTA mitigaveis; demais MEDIA/BAIXA, incluindo E1-E5, A1-A5, H1-H2, P2-P5)
